@@ -6,6 +6,7 @@ class Jan{
         short b = obj.nextShort();
         byte c = obj.nextByte();
         String d = obj.next();
+        obj.nextLine();
         String e  = obj.nextLine();
         System.out.println("Name is "+a+" short is "+b+" Byte is "+c+" String is "+d+" line is "+e);
     }
