@@ -10,6 +10,10 @@ class Ite{
         myArray[4] = 4567;
         myArray[5] = 1284;
         myArray[6] = 1984;
-        System.out.println("Element at 5th index is " + myArray[5]);
+        System.out.println("The 5th element of the Array: "+myArray[4]);
+        System.out.println("Content of the array: ");
+        for(int i=0;i<myArray.length;i++){
+            System.out.println(myArray[i]);
+        }
     }
 }
