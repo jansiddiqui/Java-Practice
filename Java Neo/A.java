@@ -1,5 +1,6 @@
 import java.util.function.*;
 
+// Supplier + Predicate + Function + Consumer
 class A {
     public static void main(String[] args) {
         Supplier<Integer> obj = ()->1500;
