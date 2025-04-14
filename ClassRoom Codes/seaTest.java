@@ -31,6 +31,18 @@ public class seaTest {
         } catch (IOException e) {
             System.out.println("Error during serialization: " + e.getMessage());
         }
+
+        try {
+            FileInputStream fis = new FileInputStream("student.txt");
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            Student s2 = (Student) ois.readObject();
+            ois.close();
+            fis.close();
+            System.out.println("\nDeserialized object:");
+            s2.display();
+        } catch (IOException | ClassNotFoundException e) {
+            System.out.println("Error during deserialization: " + e.getMessage());
+        }
     }
     
 }
