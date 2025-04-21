@@ -21,5 +21,20 @@ public class collections {
         }
         System.out.println("ODD sum: " + oddIdxsum);
         System.out.println("EVEN sum: " + evenIdxsum);
+        Object ldds;
+        ldds = ld.clone();
+        System.out.println("The cloned list is: " + ldds);
+        System.out.println("The original list is: " + ld);
+        ld.size();
+        System.out.println("The size of the list is: " + ld.size());
+
+        //adding two consicutive elements of the list
+        for(int i=0;i<ld.size();i++){
+            if((i+1)<ld.size()){
+                System.out.println(ld.get(i) + ld.get(i+1));
+            }else{
+                System.out.println(ld.get(i));
+            }
+        }
     }
 }
