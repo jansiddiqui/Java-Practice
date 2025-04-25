@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import static java.lang.System.exit;
 public class HasingDuplicate {
     public static void main(String[] args) {
         HashMap<Integer, String> hm = new HashMap<>();
@@ -14,6 +15,7 @@ public class HasingDuplicate {
             for (Map.Entry<Integer, String> innerEntry : hm.entrySet()) {
                 if (entry.getKey() != innerEntry.getKey() && value.equals(innerEntry.getValue())) {
                     System.out.println("Duplicate found: " + entry.getKey() + " and " + innerEntry.getKey() + ", Value: " + value);
+                    exit(0);
                 }
             }
         }
